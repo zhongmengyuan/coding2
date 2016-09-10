@@ -4,10 +4,10 @@ MAINTAINER zhongmengyuan zhongmengyuan@yihecloud.com
 
 WORKDIR /program
 
-COPY docker/start.sh /program/start.sh
+COPY docker/startup.sh /program/startup.sh
 
-RUN chmod +x /program/start.sh 
+RUN chmod +x /program/startup.sh 
 
-COPY target/zhongmengyuan1-0.0.1-SNAPSHOT.jar /program/app.jar
+COPY target/zhongmengyuantemp-0.0.1-SNAPSHOT.jar /program/app.jar
 
-CMD /program/start.sh
+CMD /program/startup.sh
