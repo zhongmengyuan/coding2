@@ -8,6 +8,6 @@ COPY docker/start.sh /program/start.sh
 
 RUN chmod +x /program/start.sh 
 
-COPY target/zhongmengyuantemp-0.0.1-SNAPSHOT.jar /program/app.jar
+COPY target/zhongmengyuan1-0.0.1-SNAPSHOT.jar /program/app.jar
 
 CMD /program/start.sh
